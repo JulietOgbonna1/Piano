@@ -46,7 +46,6 @@ let piano = document.querySelector('.mypiano');
 piano.addEventListener("click", (event) => {
     let key = event.target.getAttribute('id');
     let sound = new Audio(`./sounds/${key}.mp3`);
-    key.style.backgroundColour = 'orange';
     sound.play();
     console.log(key);
     
